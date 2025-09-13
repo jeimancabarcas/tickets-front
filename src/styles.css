@@ -1,2 +1,26 @@
 @import "tailwindcss";
+@import "primeicons/primeicons.css";
+
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+@layer base {
+  :root {
+    --color-primary-50: #E6F3FF;
+    --color-primary-100: #CCE7FF;
+    --color-primary-200: #99CFFF;
+    --color-primary-300: #66B7FF;
+    --color-primary-400: #339FFF;
+    --color-primary-500: #0080F5;
+    --color-primary-600: #0066C4;
+    --color-primary-700: #004D93;
+    --color-primary-800: #003362;
+    --color-primary-900: #001A31;
+    --color-primary-950: #000D18;
+  }
+  
+}

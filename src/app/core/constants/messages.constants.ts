@@ -1,0 +1,1 @@
+export const EMPTY_MESSAGE = 'No hay elementos para mostrar';
