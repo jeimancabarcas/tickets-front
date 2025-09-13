@@ -1,0 +1,65 @@
+<div class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+  <div class="max-w-md w-full space-y-8">
+    <div class="bg-white">
+      <!-- Header -->
+      <div class="text-center">
+        <img src="assets/images/logo.svg" alt="Logo" class="mx-auto">
+      </div>
+
+      <!-- Form -->
+      <form class="space-y-6">
+        <!-- Username Field -->
+        <div class="space-y-2">
+          <p-floatlabel variant="in">
+            <input 
+              pInputText 
+              id="email" 
+              [(ngModel)]="email" 
+              name="email"
+              class="w-full"
+              inputStyleClass="w-full"
+              required
+            />
+            <label for="email" class="text-gray-700">Email</label>
+          </p-floatlabel>
+        </div>
+
+        <!-- Password Field -->
+        <div class="space-y-2">
+          <p-floatlabel variant="in">
+            <p-password 
+              [(ngModel)]="password" 
+              name="password"
+              inputId="password"
+              [toggleMask]="true"
+              [feedback]="false"
+              class="w-full"
+              inputStyleClass="w-full"
+              required
+            />
+            <label for="password" class="text-gray-700">Password</label>
+          </p-floatlabel>
+        </div>
+
+
+        <!-- Botón de login -->
+        <p-button 
+          label="Iniciar Sesión" 
+          (onClick)="onLogin()"
+          [loading]="loading"
+          styleClass="w-full"
+        />
+      </form>
+
+      <!-- Divider -->
+      <div class="mt-8 pt-6 border-t border-gray-200">
+        <p class="text-center text-sm text-gray-600">
+          ¿No tienes una cuenta? 
+          <a href="#" class="text-blue-600 hover:text-blue-500 font-medium transition-colors">
+            Regístrate aquí
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,12 +7,14 @@ import { SPANISH_LOCALE } from './core/locale/locale-spanish';
 import { providePrimeNG } from 'primeng/config';
 import { APP_CONFIG } from './core/config/environment.token';
 import { environment } from '../environments/environment';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
     provideRouter(routes),
+    provideAnimations(),
     { provide: APP_CONFIG, useValue: environment }, 
     providePrimeNG({
       theme: {
